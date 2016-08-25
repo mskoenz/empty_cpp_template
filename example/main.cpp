@@ -8,6 +8,17 @@
  * \copyright  todo
  ******************************************************************************/
 
-#include <catch.hpp>
+#include <iostream>
+#include <A.hpp>
+// switch this header on/off to see the difference in compiletime
+#include <expl_inst.hpp>
 
-TEST_CASE("Demo Test", "[demo]") { CHECK(1 == 1); }
+int main() {
+    
+    A<int> a;
+    B<int> b;
+    
+    a.foo(b);
+    
+    return 0;
+}

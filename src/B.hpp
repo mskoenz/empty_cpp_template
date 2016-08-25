@@ -1,13 +1,24 @@
 /** ****************************************************************************
- *
  * \file
- * \brief      Contanis the catch-main function for unit testing.
- * \version    1
+ * \brief      
+ * \author
  * Year      | Name
  * --------: | :------------
  * 2016      | Mario S. Koenz
- * \copyright  TBD
+ * \copyright  todo
  ******************************************************************************/
 
-#define CATCH_CONFIG_MAIN
-#include <catch.hpp>
+#ifndef _B_HPP_GUARD
+#define _B_HPP_GUARD
+
+template<typename T>
+class B {
+public:
+    void print() const;
+private:
+    
+};
+
+#include "B.ipp"
+
+#endif //_B_HPP_GUARD
